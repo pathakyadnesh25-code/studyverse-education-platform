@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d20">
+  <meta name="description" content="STUDYVERSE AI - One platform for JEE, NEET, MHT-CET and school education. Learn smarter, achieve more.">
+  <title>STUDYVERSE AI | Learn Smarter. Achieve More.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="#" class="brand">
+        <span class="brand-icon">S</span>
+        <span>STUDYVERSE<span class="brand-ai"> AI</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#examinations" class="nav-link">Examinations</a>
+        <a href="#school" class="nav-link">School</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#about" class="nav-link">About</a>
+        <button class="btn btn-outline nav-login" id="loginButton">Login</button>
+        <button class="btn btn-primary nav-signup" id="signupButton">Get Started <span>↗</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="eyebrow">
+            <span class="live-dot"></span>
+            YOUR COMPLETE LEARNING UNIVERSE
+          </div>
+
+          <h1>
+            Your Future.<br>
+            Your Dreams.<br>
+            <span class="gradient-text">Your STUDYVERSE.</span>
+          </h1>
+
+          <p class="hero-description">
+            One powerful learning platform for competitive exams and school education.
+            Learn concepts, practise questions, take tests and track your progress.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#examinations" class="btn btn-primary btn-large">
+              Explore Courses <span>→</span>
+            </a>
+            <a href="#features" class="btn btn-glass btn-large">
+              Discover Features
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="avatar-stack">
+              <span>J</span><span>N</span><span>M</span><span>+</span>
+            </div>
+            <p><strong>One platform.</strong> Multiple learning journeys.</p>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+
+          <div class="hero-center">
+            <div class="hero-logo">S<span>AI</span></div>
+            <h3>LEARN SMARTER</h3>
+            <p>ACHIEVE MORE</p>
+          </div>
+
+          <div class="floating-card float-card-one">
+            <span class="float-icon purple">✦</span>
+            <div><strong>AI Learning</strong><small>Learn concepts</small></div>
+          </div>
+
+          <div class="floating-card float-card-two">
+            <span class="float-icon blue">⌁</span>
+            <div><strong>Mock Tests</strong><small>Test your skills</small></div>
+          </div>
+
+          <div class="floating-card float-card-three">
+            <span class="float-icon green">✓</span>
+            <div><strong>Progress</strong><small>Track improvement</small></div>
+          </div>
+
+          <div class="floating-symbol symbol-one">π</div>
+          <div class="floating-symbol symbol-two">∑</div>
+          <div class="floating-symbol symbol-three">∞</div>
+        </div>
+      </div>
+
+      <div class="container stats-strip reveal">
+        <div class="stat-item"><strong data-count="5">0</strong><span>Entrance Exam Tracks</span></div>
+        <div class="stat-item"><strong data-count="3">0</strong><span>Education Boards</span></div>
+        <div class="stat-item"><strong data-count="3">0</strong><span>School Classes</span></div>
+        <div class="stat-item"><strong>∞</strong><span>Learning Possibilities</span></div>
+      </div>
+    </section>
+
+    <!-- Entrance examinations -->
+    <section class="section" id="examinations">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">COMPETITIVE EXAMINATIONS</span>
+          <h2>Prepare for your <span class="gradient-text">dream exam.</span></h2>
+          <p>Structured learning resources to help you prepare with confidence.</p>
+        </div>
+
+        <div class="course-grid" id="examGrid"></div>
+      </div>
+    </section>
+
+    <!-- School education -->
+    <section class="section school-section" id="school">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">SCHOOL EDUCATION</span>
+          <h2>Build strong <span class="gradient-text">foundations.</span></h2>
+          <p>Learn school subjects with structured resources for your education board.</p>
+        </div>
+
+        <div class="school-controls reveal">
+          <div class="filter-group">
+            <label for="boardFilter">Education Board</label>
+            <select id="boardFilter">
+              <option value="all">All Boards</option>
+              <option value="Maharashtra State Board">Maharashtra State Board</option>
+              <option value="CBSE">CBSE</option>
+              <option value="ICSE">ICSE</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="classFilter">Class</label>
+            <select id="classFilter">
+              <option value="all">All Classes</option>
+              <option value="8">Class 8</option>
+              <option value="9">Class 9</option>
+              <option value="10">Class 10</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="school-grid" id="schoolGrid"></div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section features-section" id="features">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">THE STUDYVERSE EXPERIENCE</span>
+          <h2>Everything you need to <span class="gradient-text">learn better.</span></h2>
+          <p>A learning environment designed to make your preparation more organised.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon purple-bg">✦</div>
+            <h3>AI Learning Assistant</h3>
+            <p>Get help understanding concepts and resolving doubts with AI-assisted learning.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon blue-bg">▶</div>
+            <h3>Video Lessons</h3>
+            <p>Learn difficult topics through structured video lessons and visual explanations.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon green-bg">▤</div>
+            <h3>Notes & Formula Sheets</h3>
+            <p>Revise important concepts, definitions, formulas and chapter summaries.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon orange-bg">◎</div>
+            <h3>Question Practice</h3>
+            <p>Improve your preparation with topic-wise questions and practice exercises.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon pink-bg">◈</div>
+            <h3>Mock Tests</h3>
+            <p>Practise exam-style tests and understand your performance.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon cyan-bg">↗</div>
+            <h3>Progress Tracking</h3>
+            <p>Monitor your learning activity, completed chapters and test performance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning journey -->
+    <section class="section journey-section" id="about">
+      <div class="container journey-box reveal">
+        <div>
+          <span class="section-tag">YOUR JOURNEY STARTS HERE</span>
+          <h2>Small steps today.<br><span class="gradient-text">Big achievements tomorrow.</span></h2>
+          <p>Choose your learning path and take the first step towards your goals.</p>
+          <a href="#examinations" class="btn btn-primary btn-large">Start Exploring <span>→</span></a>
+        </div>
+        <div class="journey-art">
+          <div class="journey-ring ring-a"></div>
+          <div class="journey-ring ring-b"></div>
+          <div class="journey-trophy">🏆</div>
+          <span class="journey-star star-a">✦</span>
+          <span class="journey-star star-b">✧</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#" class="brand footer-brand">
+          <span class="brand-icon">S</span>
+          <span>STUDYVERSE<span class="brand-ai"> AI</span></span>
+        </a>
+        <p class="footer-description">Learn Smarter. Achieve More.<br>Your complete learning universe.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <a href="#examinations">Entrance Exams</a>
+        <a href="#school">School Education</a>
+        <a href="#features">Features</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Learning</h4>
+        <a href="#features">Video Lessons</a>
+        <a href="#features">Mock Tests</a>
+        <a href="#features">Study Resources</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Account</h4>
+        <a href="#" id="footerLogin">Login</a>
+        <a href="#" id="footerSignup">Create Account</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="currentYear"></span> STUDYVERSE AI. All rights reserved.</p>
+      <p>Made for learners with ambition. <span>✦</span></p>
+    </div>
+  </footer>
+
+  <!-- Login / Signup Modal -->
+  <div class="modal" id="authModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="modal-logo">S<span>AI</span></div>
+      <h2 id="modalTitle">Welcome to STUDYVERSE</h2>
+      <p id="modalDescription">Start your learning journey today.</p>
+
+      <form id="authForm">
+        <label for="studentName" id="nameLabel" hidden>Full Name</label>
+        <input type="text" id="studentName" placeholder="Your full name" hidden>
+
+        <label for="studentEmail">Email Address</label>
+        <input type="email" id="studentEmail" placeholder="Enter your email" required>
+
+        <label for="studentPassword">Password</label>
+        <input type="password" id="studentPassword" placeholder="Enter your password" required minlength="6">
+
+        <button class="btn btn-primary btn-large full-width" type="submit" id="authSubmit">Continue</button>
+      </form>
+      <p class="modal-message" id="modalMessage" role="status"></p>
+      <p class="modal-switch" id="modalSwitch">New here? <button type="button" id="switchAuth">Create an account</button></p>
+      <small class="demo-note">Demo interface only. Connect Supabase authentication before accepting real accounts.</small>
+    </div>
+  </div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
